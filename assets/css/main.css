@@ -1,0 +1,393 @@
+/* common css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 26px;
+}
+html, body{
+    height: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.pl-100{
+    padding-left: 200px;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    transition: .3s;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bg{
+    background-size: cover;
+    background-position: center;
+    transition: .3s;
+    position: relative;  
+}
+.bg-primary {
+    background: #f7c08a;
+    color: #333;
+  }
+  .bg-pink{
+      background-color: #F2D4BD;
+      
+  }
+  .bg-gray{
+      background-color: #DEDEDE;
+  }
+  .clr {
+    clear: both;
+  }
+  .l-heading {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+.bg:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #333;
+    opacity:.70;
+}
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+  }
+  .py-1 { padding: 10px 0; }
+  .py-2 { padding: 20px 0; }
+  .py-3 { padding: 30px 0; }  
+
+/* project css */
+
+.single-project,.single-expert:hover .single-overlay {
+    transform: scale(1);
+}
+.single-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: .3s;
+}
+.single-overlay:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    opacity: .80;
+}
+.single-content{
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    
+}
+.single-content a{
+    color: #fff;
+}
+.single-content i{
+    font-size: 30px;
+}
+.single-content h4{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.single-content h4 span{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+}
+.single-project {
+    text-align: center;
+    
+}
+.single-expert {
+    box-shadow: 0 15px 40px #333;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+.single-expert img{
+    margin-left: 12px;
+}
+.title{
+    text-align: center;
+    color:#333;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.details{
+    text-align: center;
+    padding-top:20px;
+}
+/* team css */
+
+
+.single-contact i{
+    background-color: #f08080;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border:5px solid #D4357F
+}
+input[type=text] {
+    border: 2px solid #D6287C;
+}
+input[type=email]{
+    border: 2px solid #D6287C;
+}
+input[type=subject]{
+    border: 2px solid #D6287C;
+}
+
+  
+/* Navbar */
+#navbar {
+    background: blue;
+    color: #fff;
+    overflow: auto;
+  }
+  
+  #navbar a {
+    color: #fff;
+  }
+  
+  #navbar .logo {
+    float: left;
+    padding-top: 20px;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    float: right;
+  }
+  
+  #navbar ul li {
+    float: left;
+  }
+  
+  #navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #navbar ul li a:hover, 
+  #navbar ul li a.current {
+    background: #444;
+    color: #f7c08a;
+  }
+  
+  /* Showcase */
+  #showcase {
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 600px;
+  }
+  
+  #showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+  }
+  
+  #showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+  }
+  
+  #showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+  }
+  
+  /* Home Info */
+  #home-info {
+    height: 450px;
+  }
+  
+  #home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('../img/photo-1.jpg') no-repeat;
+    min-height: 100%;
+  }
+  
+  #home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+  }
+  
+  #home-info .info-content p {
+    padding-bottom: 30px;
+  }
+
+/* header css */
+
+.header-area{
+    /*position: absolute;*/
+    left: 0;
+    right: 0;
+    z-index: 9;
+    padding: 20px 0;
+    transition: .3s;
+    border-bottom: solid 5px #D4357F;
+    background-color:#333 ;
+    overflow: hidden;
+}
+.header-area.sticky{
+    position: fixed;
+    background-color: #333;
+    padding: 5px 0;
+}
+.header-area img{
+    height:50px;
+    width:200px;
+}
+
+.navbar-brand{
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.navbar-nav.ml-auto li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: 600;
+    display: block;
+    text-decoration: none;
+}
+.navbar-nav li a:hover{
+    color: #D6287C;
+}
+
+.navbar-nav li a.current{
+    color: #D6287C;
+}
+
+/* banner css */
+ 
+.banner-content a{
+    margin: 0 5px;
+}
+
+.banner-content{
+    position: absolute;
+    color: white;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+}
+.banner-content h4{
+    font-size: 28px;
+}
+.banner-content h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.banner-area.owl-carousel .owl-stage-outer{
+    height: 100%;
+}
+.banner-area.owl-carousel .owl-stage{
+    height: 100%;
+}
+.banner-area.owl-carousel .owl-item{
+    height: 100%;
+}
+.banner-area .owl-dots{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);   
+}
+.banner-area .owl-dots button{
+    background-color: #f08080!important;
+    width: 20px;
+    height: 20px;
+    margin: 10px 0;
+    display: block;
+    border-radius: 50%;
+}
+.banner-area .owl-dots button.active{
+    background-color: #fff !important;
+}
+  
+.address{
+    margin-top:40px;
+}
+
+/* About Info */
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+  }
+  
+  #about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+  }
+  
+  #about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+  }
+  .text-brand{
+      color:#D4357F;
+  }
+  .padding{
+      margin-top:40px;
+  }
