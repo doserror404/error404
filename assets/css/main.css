@@ -142,7 +142,9 @@ ul{
 
 }
 .single-expert img{
-    margin-left: 12px;
+    max-width: 100%;
+    align-content: center;
+    padding-left: 12%;
 }
 .title{
     text-align: center;
