@@ -137,14 +137,15 @@ ul{
 }
 .single-expert {
     box-shadow: 0 15px 40px #333;
-    padding: 20px;
+   
     margin-bottom: 20px;
 
 }
 .single-expert img{
     max-width: 100%;
-    align-content: center;
-    padding-left: 12%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .title{
     text-align: center;
@@ -392,4 +393,12 @@ input[type=subject]{
   }
   .padding{
       margin-top:40px;
+  }
+  .team_img img{
+      width:80%;
+      border-radius: 50%;
+      padding-top: 30px;
+  }
+  .single-expert{
+      padding-bottom: 30px;
   }
